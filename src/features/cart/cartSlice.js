@@ -4,6 +4,7 @@ export const addItem = (itemToAdd) => {
     //returns an action type and item to add
     return {
         type: 'cart/addItem',
+        //an entire item
         payload: itemToAdd
     }
 }
@@ -12,6 +13,7 @@ export const changeItemQuantity = (name, newQuantity) => {
     //returns an action type and an object containing a name and new quantity
     return {
         type: 'cart/changeItemQuantity',
+        //just a name and a new quantity based off input
         payload: {
             name, newQuantity
         }

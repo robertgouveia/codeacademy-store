@@ -1,7 +1,10 @@
-import '../App.css';
+import '../index.css';
+import {CurrencyFilter} from "../features/currencyFilter/CurrencyFilter";
 
 function App({state, dispatch}) {
-  console.log('state:', state)
+  return (
+      <CurrencyFilter currencyFilter={state.currencyFilter} dispatch={dispatch}/>
+  )
 }
 
 export default App;
